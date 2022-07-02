@@ -1,9 +1,12 @@
 import 'nextra-theme-blog/style.css'
 import Head from 'next/head'
+import { usePanelbear } from '@panelbear/panelbear-nextjs'
 
 import '../styles/main.css'
 
 export default function Nextra({ Component, pageProps }) {
+  usePanelbear('YOUR_SITE_ID')
+
   return (
     <>
       <Head>
