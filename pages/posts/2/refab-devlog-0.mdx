@@ -1,0 +1,90 @@
+---
+title: Refab devlog No. Zero
+date: 2022-07-04
+description: What's this Refab thing and what good it can do to me?
+tag: dev,refab,projects
+author: Al
+---
+
+# Re-inventing prefabricated components a.k.a Refab
+
+In my dev life I've started a lot of projects. Every time at the beginning I have a lot of passion
+and after a few weeks I start to lose my interest and eventually I quit those projects unfinished. 
+
+Each time I start a new project I have to do some stuff that I've already done in my previous project.
+I need to create the project directories architecture, I need to create authentication APIs and screens (I've 
+literally build a thousand login screens in my life, and honestly I hate it), or all this common stuff 
+that each project have.
+
+To do this repetitive stuff over and over again for each new project, increases the inertia to start 
+the project at all.
+
+So people like me who wants to create a prototype or an MVP out of their ideas real quick, need to be
+armed with something that enables them to overcome this boring stuff.
+
+## TLDR;
+
+My solution to this is Refab! Refab is going to be that magical CLI tool that does the boring stuff for you,
+you just do this:
+
+```bash
+refab generate page register
+```
+
+and Refab goes:
+
+```bash
+  ⚙️ Creating Register page in /src/pages/register/ ...
+```
+
+and voila...
+```bash
+  🎉 Register page created!
+
+  Files added:
+  - 📄 /src/pages/register/index.tsx
+  - 📄 /src/pages/register/index.styled.tsx
+
+  Packages added:
+  - 📦 @mantine/forms
+```
+
+and that's it! Refab automatically creates a register folder inside your pages directory containing a clean register
+screen that you can start modifying it and connect it to your components. Also it install all the dependencies that register
+screen needs and also added other files and components that were imported in register screen! Awesome, Ha?
+
+## So why bother? Why just not copy/pasting?
+
+I've been there, and I'm pretty sure that you've been there too. It just never worth the time to copy and paste shit,
+from our old nasty projects! 
+
+Here's why I prefer not to do it:
+
+### Clean-up takes a while
+
+When you copy a code from an old codebase, you need to delete a lot of stuff, change some others and try to install all 
+the missing dependencies. You have to change the styles and get rid of those old ones. 
+And you probably need to go line by line to make sure there's nothing that you don't want. 
+
+### I myself hate my old codes
+
+You know it. Our old codes are always bad. Most of the time is hard to look at it. So using it again? Oh no, thanks. I
+just prefer to spend sometime and do it the right way!
+
+### It's just not easy, right?
+
+Help me out here. Those who know what I'm talking about know that it's not easy, and it's not likable. So I wrap up my reasons here! 
+
+
+## So what next?
+
+Right now, I'm building Refab with the help of a friend of mine and it's in the development phase. 
+I'm expecting to release Refab in a couple of months but we have to see, as I have a full-time job.
+
+You can follow Refab's progress in it's <a href="https://github.com/refab-js" target="_blank">github organization</a>.
+
+In the next devlog, I'll try to write Refab's roadmap.
+
+Thanks for the reading, I'll see you tomorrow, hopefully.
+
+##### – Al
